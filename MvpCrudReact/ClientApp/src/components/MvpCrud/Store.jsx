@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Button, Icon, Modal, Table, Form } from "semantic-ui-react";
 import axios from "axios";
-import Sales from "./Sales";
+
 import "./Crud.css";
 import DividerCrud from "./DividerCrud";
 const Store = () => {
@@ -113,7 +113,7 @@ const Store = () => {
       });
   };
 
-  console.log(RowData);
+  
   useEffect(() => {
     fetchStore();
   }, []);
